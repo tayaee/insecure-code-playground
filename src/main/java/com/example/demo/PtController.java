@@ -13,9 +13,9 @@ class PtController {
     @GetMapping
     public String intro() {
         return "<h2>Path Traversal demo</h2>" +
-                "<li><a href='/pt/demo1?username=john'>/pt/demo1?username=john</a> (Look up john by username)" +
-                "<li><a href='/pt/demo1?username=jane'>/pt/demo1?username=jane</a> (Look up jane by username)" +
-                "<li><a href='/pt/demo1?username=../sitesettings'>/pt/demo1?username=../sitesettings</a>  (Hack it)";
+                "<li><a href='/pt/demo1?username=john'>/pt/demo1?username=john</a> (Get john user preference file)" +
+                "<li><a href='/pt/demo1?username=jane'>/pt/demo1?username=jane</a> (Get jane user preference file)" +
+                "<li><a href='/pt/demo1?username=../sitesettings'>/pt/demo1?username=../sitesettings</a>  (Hack it. Get site settings.)";
     }
 
     @GetMapping("/demo1")

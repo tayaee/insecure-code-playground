@@ -46,8 +46,8 @@ class CmdiController {
     public String intro() {
         return "<h2>CMDi demo</h2>" +
                 "<li><a href='/cmdi/demo1?username=john'>/cmdi/demo1?username=john</a> (Get file list from john directory)" +
-                "<li><a href='/cmdi/demo1?username=jane'>/cmdi/demo1?username=jane</a> (Get file list from john directory)" +
-                "<li><a href='/cmdi/demo1?username=%26hostname%26date/t%26REM '>/cmdi/demo1?username=%26hostname%26date/t%26REM </a> (Hack Windows)";
+                "<li><a href='/cmdi/demo1?username=jane'>/cmdi/demo1?username=jane</a> (Get file list from jane directory)" +
+                "<li><a href='/cmdi/demo1?username=%26hostname%26date/t%26REM '>/cmdi/demo1?username=%26hostname%26date/t%26REM </a> (Hack it. Run hostname and time /t)";
     }
 
     @GetMapping("/demo1")

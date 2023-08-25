@@ -20,9 +20,9 @@ class SqliController {
     @GetMapping
     public String intro() {
         return "<h2>SQL Injection Demo</h2>" +
-                "<li><a href='/sqli/demo1?username=john'>/sqli/demo1?username=john</a> (Look up john by username)" +
-                "<li><a href='/sqli/demo1?username=jane'>/sqli/demo1?username=jane</a> (Look up jane by username)" +
-                "<li><a href='/sqli/demo1?username=1%27%20OR%20%271%27=%271'>/sqli/demo1?username=1%27%20OR%20%271%27=%271</a>  (Hack it)";
+                "<li><a href='/sqli/demo1?username=john'>/sqli/demo1?username=john</a> (Look up john by username in the embedded database)" +
+                "<li><a href='/sqli/demo1?username=jane'>/sqli/demo1?username=jane</a> (Look up jane by username in the embedded database)" +
+                "<li><a href='/sqli/demo1?username=1%27%20OR%20%271%27=%271'>/sqli/demo1?username=1%27%20OR%20%271%27=%271</a>  (Hack it. Get all users)";
     }
 
     @GetMapping("/demo1")
